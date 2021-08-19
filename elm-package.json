@@ -1,8 +1,8 @@
 {
     "version": "1.0.0",
-    "summary": "cibertexto",
-    "repository": "https://github.com/cibertexto/cibertexto.git",
-    "license": "Closed Source",
+    "summary": "cibertexto-website-elm",
+    "repository": "https://github.com/egvelho/cibertexto-website-elm.git",
+    "license": "GPL-3.0",
     "source-directories": [
         "src/"
     ],
