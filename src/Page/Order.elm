@@ -31,31 +31,31 @@ getFullOption : String -> String
 getFullOption option_ =
   case option_ of
     "format" ->
-        "Formatar computador"
+        "Eiusmod tempor incididunt"
     "programProblem" ->
-        "Problema com programa"
+        "Eiusmod tempor incididunt"
     "trollProblem" ->
-        "Programa que não desinstala"
+        "Eiusmod tempor incididunt"
     "startupProblem" ->
-        "Windows não inicia"
+        "Eiusmod tempor incididunt"
     "lostFiles" ->
-        "Recuperação de arquivos"
+        "Eiusmod tempor incididunt"
     "slowProblem" ->
-        "Computador/celular está lento"
+        "Eiusmod tempor incididunt"
     "newProgram" ->
-        "Instalar programa(s) novo(s)"
+        "Eiusmod tempor incididunt"
     "backup" ->
-        "Realizar backup"
+        "Eiusmod tempor incididunt"
     "virus" ->
-        "Computador/celular com vírus"
+        "Eiusmod tempor incididunt"
     "help" ->
-        "Ajuda"
+        "Eiusmod tempor incididunt"
     "lawyer" ->
-        "Reunião com jurista"
+        "Eiusmod tempor incididunt"
     "development" ->
-        "Reunião sobre desenvolvimento"
+        "Eiusmod tempor incididunt"
     _ ->
-       "Não informado"
+       "Eiusmod tempor incididunt"
 
 inputOrderCard : Model -> Html Msg
 inputOrderCard model =
@@ -78,7 +78,7 @@ inputOrderCard model =
             [ css "margin-left" "auto"
             , css "margin-right" "auto"
             ]
-            [ text "Por favor, insira a senha do seu pedido" ]
+            [ text "Lorem ipsum dolor sit amet" ]
         ]
     , Card.text
         [ Options.center
@@ -310,7 +310,7 @@ resultCard model =
                 ]
             )
     , Card.text []
-        [ Markdown.toHtml [] "**OBS:** Vamos entrar em contato por celular para confirmar seu pedido." ]
+        [ Markdown.toHtml [] "**OBS:** Eiusmod tempor incididunt." ]
     , Card.actions
         [ Card.border ]
         [ Button.render Mdl [98] model.mdl

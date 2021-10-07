@@ -260,9 +260,9 @@ update msg model =
             {schedulePage | address =
               ( case place_ of
                   0 ->
-                    "Prédio Verde (na lancheria Dog Mania) - Rua Arlindo Pasqualini, Vila Nova, Novo Hamburgo"
+                    "Endereço A"
                   1 ->
-                    "Av. Pedro Adams Filho, 5118 - Centro, Novo Hamburgo"
+                    "Endereço B"
                   _ ->
                     ""
               )
@@ -522,18 +522,18 @@ update msg model =
           place =
             ( case schedulePage.place of
                 0 ->
-                  "Universidade Feevale (Campus II)"
+                  "Endereço A"
                 1 ->
-                  "Café Passion"
+                  "Endereço B"
                 _ ->
-                  "Em meu escritório ou empresa"
+                  "Endereço C"
             )
           address =
             ( case schedulePage.place of
                 0 ->
-                  "Prédio Verde (na lancheria Dog Mania) - Rua Arlindo Pasqualini, Vila Nova, Novo Hamburgo"
+                  "Endereço A"
                 1 ->
-                  "Av. Pedro Adams Filho, 5118 - Centro, Novo Hamburgo"
+                  "Endereço B"
                 _ ->
                   schedulePage.address
             )

@@ -4,7 +4,7 @@
   "description": "Website written in Elm 0.18.",
   "main": "index.js",
   "scripts": {
-    "build": "elm-make src/Main.elm --output=public/main.js",
+    "build": "./elm-make src/Main.elm --output=public/main.js",
     "deploy": "gh-pages -d public"
   },
   "repository": {

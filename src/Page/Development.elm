@@ -97,9 +97,7 @@ headerContact model =
             [ text "Entre em contato!" ]
         , Card.subhead []
             [ text
-                """Vamos avaliar seu negócio e
-                apresentar para você uma solução
-                em software extremamente elegante."""
+                """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."""
             ]
         ]
     , Card.actions
@@ -202,11 +200,7 @@ materialDesignCard : Model -> Html Msg
 materialDesignCard model =
   infoCard model
     "Material Design"
-    """É o **estado da arte** em termos de design de interfaces.
-    Tudo o que desenvolvemos utiliza esta linguagem de design da
-    **Google**. Linguagem esta que busca garantir a melhor
-    **usabilidade** para seu site ou aplicativo. Além de,
-    é claro, possuir um **visual moderno e profissional**."""
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
     "material-design.svg"
     (Color.color Color.Teal Color.S500)
 
@@ -214,13 +208,7 @@ lambdaCard : Model -> Html Msg
 lambdaCard model =
   infoCard model
     "O poder do lambda"
-    """Não é à toa que o símbolo matemático lambda integra
-    o logo da Cibertexto Tecnologia! Nós utilizamos **as tecnologias mais
-    avançadas para desenvolver seu site ou aplicativo**. Isto
-    inclui a utilização do paradigma funcional, uma forma
-    de criar programas de computador que segue princípios
-    da matemática para garantir **alta performance e
-    confiabilidade** em nossos produtos."""
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
     "lambda.svg"
     (Color.color Color.Indigo Color.S500)
 
@@ -228,13 +216,7 @@ mobileFirstCard : Model -> Html Msg
 mobileFirstCard model =
   infoCard model
     "Mobile First"
-    """Viu como este site se adaptou perfeitamente na tela
-    do seu celular? Isto é porque **pensamos primeiro nos
-    celulares** para desenvolvê-lo. É justamente disso que
-    o Mobile First se trata: **focar no que todo mundo usa**,
-    onde as pessoas estão. Criar pensando nas telas dos
-    celulares e então adaptá-las para as telas dos
-    computadores."""
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
     "mobile-first.svg"
     (Color.color Color.Pink Color.S500)
 

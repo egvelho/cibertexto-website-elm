@@ -49,11 +49,11 @@ render model =
       ]
   , Layout.navigation []
       [ Layout.spacer
-      , drawerItem "#/home" "Home" "home.png" model
-      , drawerItem "#/assistencia" "Solicitar assistência" "help.png" model
-      , drawerItem "#/andamento" "Consultar andamento de pedido" "clock.png" model
-      , drawerItem "#/advogados" "Para advogados" "lawyer.png" model
-      , drawerItem "#/dev" "Criação de sites e aplicativos" "code.png" model 
-      , drawerItem "#/sobre" "Sobre a empresa" "document.png" model
+      , drawerItem "#/home" "Lorem ipsum" "home.png" model
+      , drawerItem "#/assistencia" "Lorem ipsum" "help.png" model
+      , drawerItem "#/andamento" "Lorem ipsum" "clock.png" model
+      , drawerItem "#/advogados" "Lorem ipsum" "lawyer.png" model
+      , drawerItem "#/dev" "Lorem ipsum" "code.png" model 
+      , drawerItem "#/sobre" "Lorem ipsum" "document.png" model
       ]
   ]

@@ -72,7 +72,7 @@ encodeOrder order_ =
 getScheduling : Cmd Msg
 getScheduling =
   let
-    url = "https://api.cibertexto.com.br/wt-023de707d632fc09401212c10d95c6b5-0/schedule"
+    url = "https://api.example.com/schedule"
   in
     Http.send
       Types.RequestSchedulingSchedulePage
@@ -81,7 +81,7 @@ getScheduling =
 getOrder : String -> Cmd Msg
 getOrder id_ =
   let
-    url = "https://api.cibertexto.com.br/wt-023de707d632fc09401212c10d95c6b5-0/schedule/" ++ id_
+    url = "https://api.example.com/schedule/" ++ id_
   in
     Http.send
       Types.RequestOrderOrderPage
@@ -95,7 +95,7 @@ getOrder id_ =
 postOrder : Types.SendOrder -> Cmd Msg
 postOrder order_ =
   let
-    url_ = "https://api.cibertexto.com.br/wt-023de707d632fc09401212c10d95c6b5-0/schedule"
+    url_ = "https://api.example.com/schedule"
   in
     Http.send
       Types.PostSchedulingSchedulePage

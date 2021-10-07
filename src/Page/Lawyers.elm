@@ -36,7 +36,7 @@ subHeader model =
             , Typography.headline |> when
                 (model.viewport == Types.Tablet || model.viewport == Types.Phone)
             ]
-            [ text "Auxílio técnico para advogados" ]
+            [ text "Eiusmod tempor incididunt ut labore" ]
         ]
     , cell
         [ Grid.size Desktop 4
@@ -74,60 +74,35 @@ accessHelpCard model =
         , css "width" "auto"
         ]
         [ Markdown.toHtml []
-            """Como já está sendo dito há algum tempo,
-            estamos na **"era do processo eletrônico"**.
-            Desta forma, a partir de seus computadores
-            pessoais, advogados e outros profissionais
-            da área jurídica acessam serviços
-            governamentais através da internet."""
+            """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
         ]
     , Card.text
         [ css "text-align" "justify"
         , css "width" "auto"
         ]
         [ Markdown.toHtml []
-            """Para realizar este acesso geralmente é
-            necessário que se instalem programas adicionais
-            que servem para, em teoria, aumentar a segurança
-            da conexão entre o computador do advogado e o
-            serviço que se deseja acessar. Além destes programas,
-            também é necessário o **token**, que é um dispositivo de
-            armazenamento que guarda o Certificado Digital
-            utilizado para autenticar o acesso."""
+            """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
         ]
     , Card.text
         [ css "text-align" "justify"
         , css "width" "auto"
         ]
         [ Markdown.toHtml []
-            """Porém, existe uma série de burocracias que são
-            necessárias entre estes passos. Por exemplo, para
-            submeter uma petição ao PJE, é preciso que os 
-            arquivos anexados estejam no formato PDF-A. Para
-            criar um arquivo desses à partir de um documento
-            escaneado, é necessário instalar um programa adicional.
-            **Isso não é intuitivo!**"""
+            """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
         ]
     , Card.text
         [ css "text-align" "justify"
         , css "width" "auto"
         ]
         [ Markdown.toHtml []
-            """Ou ainda, alguns serviços precisam de um navegador
-            de internet especial para acessá-los. Como é o caso do
-            TJRS Browser. Estes navegadores geralmente são versões
-            modificadas do Mozilla Firefox pré-configuradas para
-            realizar o acesso à estes serviços. Novamente, **isso
-            tudo é muito complicado e suscetível à falhas!**"""
+            """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
         ]
     , Card.text
         [ css "text-align" "justify"
         , css "width" "auto"
         ]
         [ Markdown.toHtml []
-            """O que nós queremos dizer com este texto, é que sabemos
-            que os juristas estão passando por um momento de transição.
-            **A Cibertexto Tecnologia pode orientá-lo durante estas mudanças.**"""
+            """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
         ]
     ]
 
@@ -154,12 +129,10 @@ promoCard model =
         [ css "flex" "1" ]
         [ Card.head
             [ Color.text Color.accent ]
-            [ text "Consultoria sobre sigilo e segurança" ]
+            [ text "Eiusmod tempor incididunt ut labore et" ]
         , Card.subhead []
             [ text
-                """Que tal um pouco de criptografia?
-                Entre em contato para aprender a proteger
-                as informações pessoais dos seus clientes."""
+                """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."""
             ]
         ]
     , Card.actions [ Card.border ]
@@ -168,7 +141,7 @@ promoCard model =
             , Button.ripple
             , Options.onClick <| Types.SelectOrderSchedulePage Types.LawyerOrder
             ]
-            [ text "Agendar uma reunião" ]
+            [ text "Eiusmod tempor incididunt ut" ]
         ]
     ]
 
@@ -195,12 +168,10 @@ privacyInfoCard model =
         [ css "flex" "1" ]
         [ Card.head
             [ Color.text Color.accent ]
-            [ text "Auxílio técnico" ]
+            [ text "Lorem ipsum dolor" ]
         , Card.subhead []
             [ text
-                """Visitamos você em seu escritório
-                para auxiliá-lo com as devidas questões
-                técnicas."""
+                """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."""
             ]
         ]
     , Card.text []

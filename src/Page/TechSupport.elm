@@ -34,7 +34,7 @@ subHeader model =
           )
         , css "font-size" "48px"
         ]
-        [ text "O que aconteceu?" ]
+        [ text "Lorem ipsum dolor?" ]
     ]
 
 techItem : Model -> String -> String -> String -> Html Msg
@@ -66,43 +66,43 @@ techItems model =
     , css "padding-right" "8px"
     ]
     [ techItem model
-        "Preciso formatar meu computador!"
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "format.png"
         "format"
     , techItem model
-        "Tem um programa que não está funcionando direito."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "stopped.png"
         "programProblem"
     , techItem model
-        "Um programa se instalou sozinho e não consigo removê-lo!"
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "adware.png"
         "trollProgram"
     , techItem model
-        "Meu computador liga mas não inicia o Windows."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "confusion.png"
         "startupProblem"
     , techItem model
-        "Apaguei um arquivo importante sem querer. Quero recuperá-lo."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "lost-files.png"
         "lostFiles"
     , techItem model
-        "Meu computador/celular está lento..."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "slow.png"
         "slowProblem"
     , techItem model
-        "Preciso instalar um programa novo."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "new-program.png"
         "newProgram"
     , techItem model
-        "Gostaria de fazer backup de alguns arquivos..."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "backup.png"
         "backup"
     , techItem model
-        "Acho que peguei vírus... Estou preocupado com a segurança do meu computador/celular."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "virus.png"
         "virus"
     , techItem model
-        "Tenho algumas dúvidas, preciso de ajuda!"
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
         "help.png"
         "help"
     ]
@@ -159,27 +159,26 @@ optionView model title_ subtitle_ order_ content=
 mainOption : Model -> Html Msg
 mainOption model =
   optionView model
-    "Seja bem-vindo ao serviço de solicitação de assistência técnica!"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     ( if (model.viewport == Types.Desktop) then
-        "Por favor, selecione a opção que mais se aproxima ao seu problema."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
       else
-        "Por favor, selecione a opção que mais se aproxima ao seu problema clicando em **continuar**."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     )
     Types.HelpOrder
     <| div []
         [ Markdown.toHtml []
-            """Caso seu problema seja relativo à danos físicos no seu computador ou celular,
-            como tela quebrada ou outras avarias, saiba que não trabalhamos com estes casos."""
+            """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."""
         , Markdown.toHtml []
-            """Ei! Psiu! Será que você não precisa de um [website](/dev) ou
+            """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor [website](/dev) ou
             [aplicativo para celular](/dev)?"""
         ]
 
 formatOption : Model -> Html Msg
 formatOption model =
   optionView model
-    "É inevitável!"
-    "Como precisamos formatar nossos computadores de tempos em tempos, não é mesmo?"
+    "Lorem ipsum"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     Types.FormatOrder
     ( let
         withBackup =
@@ -196,7 +195,7 @@ formatOption model =
                   , Options.onToggle (Types.ToggleFormatBackupTechSupportPage False)
                   , css "height" "auto"
                   ]
-                  [ text "Não preciso dos meus arquivos, pode apagar tudo." ]
+                  [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ]
               ]
           , cell [ Grid.size All 12 ]
               [ Toggles.radio Mdl [1] model.mdl
@@ -206,7 +205,7 @@ formatOption model =
                   , Options.onToggle (Types.ToggleFormatBackupTechSupportPage True)
                   , css "height" "auto"
                   ]
-                  [ text "Preciso que você salve todos os meus arquivos, não posso perder nenhum." ]
+                  [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ]
               ]
           , cell [ Grid.size All 12 ]
               [ Toggles.switch Mdl [2] model.mdl
@@ -215,25 +214,25 @@ formatOption model =
                   , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                   , css "height" "auto"
                   ]
-                  [ text "Com urgência!" ]
+                  [ text "Lorem ipsum!" ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
                   [ text <| "R$ " ++
                       ( if (withBackup && urgency) then
-                          "130,00"
+                          "XXX,XX"
                         else if withBackup then
-                          "100,00"
+                          "XXX,XX"
                         else if urgency then
-                          "110,00"
+                          "XXX,XX"
                         else
-                          "80,00"
+                          "XXX,XX"
                       )
                   ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
-                  [ text <| "Entrega em " ++ ( if urgency then "2 dias" else "7 dias" ) ]
+                  [ text <| "Lorem ipsum dolor " ++ ( if urgency then "2 dias" else "7 dias" ) ]
               ]
           ]
     )
@@ -241,8 +240,8 @@ formatOption model =
 programProblemOption : Model -> Html Msg
 programProblemOption model =
   optionView model
-    "E isso sempre acontece quando a gente mais precisa"
-    "Mas, fique tranquilo que podemos ajudá-lo."
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     Types.ProgramProblemOrder
     ( let urgency =
         model.pages.techSupport.urgency
@@ -255,11 +254,11 @@ programProblemOption model =
                   , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                   , css "height" "auto"
                   ]
-                  [ text "Com urgência!" ]
+                  [ text "Lorem ipsum!" ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
-                  [ text <| "R$ " ++ ( if urgency then "50,00" else "30,00" ) ]
+                  [ text <| "R$ " ++ ( if urgency then "XXX,XX" else "XXX,XX" ) ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
@@ -271,8 +270,8 @@ programProblemOption model =
 trollProgramOption : Model -> Html Msg
 trollProgramOption model =
   optionView model
-    "Também conhecidos como adware ou programas troll, se instalam silenciosamente..."
-    "...e não importa o que você faça, eles continuam lá. Podemos resolver isso!"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     Types.TrollProgramOrder
     ( let urgency =
         model.pages.techSupport.urgency
@@ -285,11 +284,11 @@ trollProgramOption model =
                   , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                   , css "height" "auto"
                   ]
-                  [ text "Com urgência!" ]
+                  [ text "Lorem ipsum!" ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
-                  [ text <| "R$ " ++ ( if urgency then "40,00" else "20,00" ) ]
+                  [ text <| "R$ " ++ ( if urgency then "XXX,XX" else "XXX,XX") ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
@@ -301,9 +300,8 @@ trollProgramOption model =
 startupProblemOption : Model -> Html Msg
 startupProblemOption model =
   optionView model
-    "Isso pode ser problemático..."
-    """Quem sabe seja necessário substituir alguma peça do seu computador.
-    Por favor, tente ligá-lo e verifique se:"""
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"""
     Types.StartupProblemOrder
     ( let
         problem =
@@ -320,7 +318,7 @@ startupProblemOption model =
                   , Options.onToggle (Types.ToggleStartupProblemTechSupportPage 0)
                   , css "height" "auto"
                   ]
-                  [ text "Aparece uma tela como se o Windows fosse carregar, daí ele trava (ou reinicia)" ]
+                  [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ]
               ]
           , cell [ Grid.size All 12 ]
               [ Toggles.radio Mdl [1] model.mdl
@@ -330,7 +328,7 @@ startupProblemOption model =
                   , Options.onToggle (Types.ToggleStartupProblemTechSupportPage 1)
                   , css "height" "auto"
                   ]
-                  [ text "O computador fica travado em uma tela preta com umas letras brancas" ]
+                  [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ]
               ]
             , cell [ Grid.size All 12 ]
               [ Toggles.radio Mdl [2] model.mdl
@@ -340,7 +338,7 @@ startupProblemOption model =
                   , Options.onToggle (Types.ToggleStartupProblemTechSupportPage 2)
                   , css "height" "auto"
                   ]
-                  [ text "Liga por alguns segundos mas logo se desliga/reinicia" ]
+                  [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ]
               ]
           , cell [ Grid.size All 12 ]
               [ Toggles.switch Mdl [3] model.mdl
@@ -349,7 +347,7 @@ startupProblemOption model =
                   , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                   , css "height" "auto"
                   ]
-                  [ text "Com urgência!" ]
+                  [ text "Lorem ipsum!" ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
@@ -370,13 +368,12 @@ startupProblemOption model =
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
-                  [ text <| "Entrega em " ++ ( if urgency then "3 dias" else "7 dias" ) ]
+                  [ text <| "Lorem ipsum dolor " ++ ( if urgency then "3 dias" else "7 dias" ) ]
               ]
           , cell [ Grid.size All 12 ]
               [ Options.styled p [ Typography.body2 ]
                   [ text <|
-                      """OBS: Pode ser que seja necessário substituir alguma peça.
-                      Nesse caso, o valor da peça será anexado ao valor da prestação do serviço."""
+                      """OBS: Lorem ipsum dolor."""
                   ]
               ]
           ]
@@ -385,9 +382,8 @@ startupProblemOption model =
 lostFilesOption : Model -> Html Msg
 lostFilesOption model =
   optionView model
-    "Por favor, desligue imediatamente o dispositivo onde o arquivo deletado estava"
-    """Quanto mais você usa este dispositivo (computador, celular, pendrive e etc.),
-    maior é a chance do seu arquivo se tornar irrecuperável."""
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"""
     Types.LostFilesOrder
     ( let urgency =
         model.pages.techSupport.urgency
@@ -396,11 +392,7 @@ lostFilesOption model =
            [ cell [ Grid.size All 12 ]
                [ Options.styled p [ Typography.body2 ]
                    [ text <|
-                       """OBS: Nós não garantimos que seus arquivos serão recuperados.
-                       Quanto menos tempo faz que seus arquivos foram apagados,
-                       maior é a chance de recuperação. É recomendado que você desligue
-                       seu computador ou celular imediatamente por este motivo. Se os
-                       arquivos deletados estavam em uma câmera ou pendrive, não os use."""
+                       """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"""
                    ]
                ]
             , cell [ Grid.size All 12 ]
@@ -410,11 +402,11 @@ lostFilesOption model =
                     , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                     , css "height" "auto"
                     ]
-                    [ text "Com urgência!" ]
+                    [ text "Lorem ipsum!" ]
                 ]
             , cell [ Grid.size All 12, Grid.size Desktop 6 ]
                 [ Options.styled p [ Typography.display2 ]
-                    [ text <| "R$ " ++ ( if urgency then "70,00" else "50,00" ) ]
+                    [ text <| "R$ " ++ ( if urgency then "XXX,XX" else "XXX,XX" ) ]
                 ]
             , cell [ Grid.size All 12, Grid.size Desktop 6 ]
                 [ Options.styled p [ Typography.headline ]
@@ -426,8 +418,8 @@ lostFilesOption model =
 slowOption : Model -> Html Msg
 slowOption model =
   optionView model
-    "É frustrante"
-    "Mas, podemos dar um jeito nisso!"
+    "Lorem ipsum dolor sit amet"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     Types.SlowProblemOrder
     ( let urgency =
         model.pages.techSupport.urgency
@@ -440,15 +432,15 @@ slowOption model =
                   , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                   , css "height" "auto"
                   ]
-                  [ text "Com urgência!" ]
+                  [ text "Lorem ipsum!" ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
-                  [ text <| "R$ " ++ ( if urgency then "50,00" else "30,00" ) ]
+                  [ text <| "R$ " ++ ( if urgency then "XXX,XX" else "XXX,XX" ) ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
-                  [ text <| "Entrega em " ++ ( if urgency then "2 dias" else "4 dias" ) ]
+                  [ text <| "Lorem ipsum dolor " ++ ( if urgency then "2 dias" else "4 dias" ) ]
               ]
           ]
     )
@@ -457,8 +449,8 @@ slowOption model =
 newProgramOption : Model -> Html Msg
 newProgramOption model =
   optionView model
-    "Podemos instalar quantos você quiser"
-    "E não vamos cobrar a mais por isso."
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    "Lorem ipsum dolor sit amet"
     Types.NewProgramOrder
     ( let urgency =
         model.pages.techSupport.urgency
@@ -471,31 +463,24 @@ newProgramOption model =
                   , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                   , css "height" "auto"
                   ]
-                  [ text "Com urgência!" ]
+                  [ text "Lorem ipsum!" ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
-                  [ text <| "R$ " ++ ( if urgency then "40,00" else "30,00" ) ]
+                  [ text <| "R$ " ++ ( if urgency then "XXX,XX" else "XXX,XX" ) ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
-                  [ text <| "Entrega em " ++ ( if urgency then "1 dia" else "2 dias" ) ]
+                  [ text <| "Lorem ipsum dolor " ++ ( if urgency then "1 dia" else "2 dias" ) ]
               ]
           , cell [ Grid.size All 12 ]
              [ Options.styled p [ Typography.body2 ]
                  [ Markdown.toHtml []
-                     """OBS: **Não instalamos programas pirata nos computadores/celulares
-                     dos nossos clientes**. Portanto, se o que você precisa instalar
-                     é um programa pago, por favor, compre uma licença de uso do
-                     programa para que possamos efetuar a instalação."""
+                     """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"""
                  ]
              , Options.styled p [ Typography.body2 ]
                  [ text
-                     """Por outro lado, podemos instalar uma versão de testes do
-                     programa que você precisa. Estas versões geralmente funcionam
-                     por 30 dias. Outra opção é instalar uma alternativa gratuita
-                     ao programa que você precisa. Por favor, entre em contato
-                     conosco para que possamos avaliar a situação!"""
+                     """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor!"""
                  ]
              ]
           ]
@@ -504,8 +489,8 @@ newProgramOption model =
 backupOption : Model -> Html Msg
 backupOption model =
   optionView model
-    "Excelente iniciativa!"
-    "O backup é uma garantia de que você não irá perder seus arquivos importantes."
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     Types.BackupOrder
     ( let backupOption =
         model.pages.techSupport.toggleBackupOption
@@ -520,8 +505,7 @@ backupOption model =
                   , css "height" "auto"
                   ]
                   [ text
-                      """Vou fornecer o dispositivo onde os arquivos
-                      serão armazenados (hd externo, pendrive e etc.)"""
+                      """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"""
                   ]
               ]
           , cell [ Grid.size All 12 ]
@@ -533,13 +517,12 @@ backupOption model =
                   , css "height" "auto"
                   ]
                   [ text
-                      """Não tenho onde armazenar os arquivos,
-                     preciso que você me forneça este dispositivo"""
+                      """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"""
                   ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
-                  [ text <| "R$ " ++ ( if backupOption == 0 then "90,00" else "110,00" ) ]
+                  [ text <| "R$ " ++ ( if backupOption == 0 then "XXX,XX" else "XXX,XX" ) ]
               , Options.styled p
                  [ Typography.headline
                  , css "display" "none" |> when (backupOption == 0)
@@ -548,7 +531,7 @@ backupOption model =
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
-                  [ text <| "Entrega em 8 dias" ]
+                  [ text <| "Lorem ipsum dolor 8 dias" ]
               ]
           ]
     )
@@ -557,12 +540,8 @@ backupOption model =
 virusOption : Model -> Html Msg
 virusOption model =
   optionView model
-    "Pode ficar tranquilo"
-    """É bem improvável que seja alguma coisa preocupante.
-    Porém, entre em contato conosco para realizarmos uma
-    verificação e, em caso de malware, remoção da ameaça.
-    Além disso, vamos orientá-lo sobre como
-    se proteger na era da informação!"""
+    "Lorem ipsum"
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"""
     Types.VirusOrder
     ( let urgency =
         model.pages.techSupport.urgency
@@ -575,11 +554,11 @@ virusOption model =
                   , Options.onToggle (Types.ToggleUrgencyTechSupportPage)
                   , css "height" "auto"
                   ]
-                  [ text "Com urgência!" ]
+                  [ text "Lorem ipsum!" ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.display2 ]
-                  [ text <| "R$ " ++ ( if urgency then "60,00" else "40,00" ) ]
+                  [ text <| "R$ " ++ ( if urgency then "XXX,XX" else "XXX,XX" ) ]
               ]
           , cell [ Grid.size All 12, Grid.size Desktop 6 ]
               [ Options.styled p [ Typography.headline ]
@@ -591,8 +570,8 @@ virusOption model =
 helpOption : Model -> Html Msg
 helpOption model =
   optionView model
-    "Podemos agendar uma reunião"
-    "E suas dúvidas serão respondidas."
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
     Types.HelpOrder
     <| Options.styled p [ Typography.display2 ]
          [ text "R$ 50,00" ]

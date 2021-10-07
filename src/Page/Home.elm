@@ -90,8 +90,8 @@ bannerCard model title text_ link_ img_ bgColor_ =
 bannerAssistance : Model -> Html Msg
 bannerAssistance model =
   bannerCard model
-    "Solicite assistência técnica pelo autoatendimento"
-    [ "É simples, rápido e você sabe exatamente quanto irá custar." ]
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit." ]
     "#/assistencia"
     "calendar.svg"
     (Color.color Color.Cyan Color.S400)
@@ -99,9 +99,9 @@ bannerAssistance model =
 bannerSupport : Model -> Html Msg
 bannerSupport model =
   bannerCard model
-    "Já fez uma solicitação?"
-    [ "Veja como está o andamento do seu pedido."
-    , "Mas, fique tranquilo que você será notificado das coisas importantes."
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
+    [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    , "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     ]
     "#/andamento"
     "request.svg"
@@ -111,10 +111,10 @@ bannerLawyers : Model -> Html Msg
 bannerLawyers model =
   bannerCard model
     "Aos advogados"
-    [ "Problemas com seu token ao acessar serviços governamentais?"
-    , "Necessita de consultoria sobre sigilo e segurança na era da informação?"
-    , "Gostaria de proteger as informações privadas dos seus clientes?"
-    , "Pois então, conheça os serviços exclusivos para advogados."
+    [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?"
+    , "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?"
+    , "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?"
+    , "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
     ]
     "#/advogados"
     "scales.svg"
@@ -123,8 +123,8 @@ bannerLawyers model =
 bannerSites : Model -> Html Msg
 bannerSites model =
   bannerCard model
-    "Lojas virtuais, catálogos, sites informacionais e outros tipos de website"
-    [ "Faça a cotação ou agende uma reunião." ]
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
+    [ "Eiusmod tempor incididunt ut labore et dolore magna aliqua." ]
     "#/dev"
     "website.svg"
     (Color.color Color.Lime Color.S700)
@@ -132,8 +132,8 @@ bannerSites model =
 bannerApps : Model -> Html Msg
 bannerApps model =
   bannerCard model
-    "Pois é! Os smartphones dominaram o mundo!"
-    [ "A Cibertexto Tecnologia pode criar o aplicativo que você precisa." ]
+    "Eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    [ "Eiusmod tempor incididunt ut labore et dolore magna aliqua." ]
     "#/dev"
     "mobile.svg"
     (Color.color Color.Orange Color.S300)
@@ -160,19 +160,19 @@ bannerWithTabs model =
         ]
         [ Tabs.label
             [ Options.center ]
-            [ text "Assistência" ]
+            [ text "Lorem" ]
         , Tabs.label
             [ Options.center ]
-            [ text "Solicitação" ]
+            [ text "Lorem" ]
         , Tabs.label
             [ Options.center ]
-            [ text "Advogados" ]
+            [ text "Lorem" ]
         , Tabs.label
             [ Options.center ]
-            [ text "Sites" ]
+            [ text "Lorem" ]
         , Tabs.label
             [ Options.center ]
-            [ text "Aplicativos" ]
+            [ text "Lorem" ]
         ]
         []
     , selectBanner model
@@ -213,28 +213,24 @@ infoCard model title text_ link linkName =
 infoSupport : Model -> Html Msg
 infoSupport model =
   infoCard model
-    "Assistência técnica em computadores e celulares"
-    """Seus problemas podem ser resolvidos rapidamente.
-       Agende aqui mesmo e saiba na hora quanto vai custar.
-       Basta seguir os passos para o agendamento."""
+    "Eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."""
     "#/assistencia"
     "Acesse"
 
 infoPrivacy : Model -> Html Msg
 infoPrivacy model =
   infoCard model
-    "Sigilo e privacidade em primeiro lugar"
-    """O maior diferencial da Cibertexto Tecnologia é o foco no sigilo e na segurança das informações dos clientes.
-       A prioridade máxima do serviço de assistência é manter os dados pessoais dos clientes longe de qualquer intrusão."""
+    "Eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."""
     "#/sobre"
     "Saiba mais"
 
 infoConsultation : Model -> Html Msg
 infoConsultation model =
   infoCard model
-    "Vamos manter você atualizado!"
-    """Se você já solicitou assistência, consulte o andamento do seu pedido.
-       A Cibertexto Tecnologia busca manter seus clientes sempre atualizados sobre a prestação do serviço."""
+    "Eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."""
     "#/andamento"
     "Consulte"
 

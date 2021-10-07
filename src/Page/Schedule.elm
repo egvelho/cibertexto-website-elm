@@ -35,98 +35,98 @@ getTexts model =
   case model.pages.schedule.order of
 
     DevelopmentOrder ->
-      { title = "Vamos falar sobre o seu incrível projeto!"
-      , subtitle = "Por favor, siga os passos abaixo para agendarmos uma reunião."
-      , place = "Escolha o local da reunião"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/dev"
       }
 
     LawyerOrder ->
-      { title = "Vamos agendar uma visita"
-      , subtitle = "Por favor, siga os passos para o agendamento."
-      , place = "Escolha onde será o encontro"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/advogados"
       }
 
     FormatOrder ->
-      { title = "Você vai sentir como se o seu computador estivesse novo"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu computador para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Precisa de algum programa especial instalado ou algo parecido?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     ProgramProblemOrder ->
-      { title = "Considere o problema como resolvido"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     TrollProgramOrder ->
-      { title = "Esse programa vai cair fora!"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     StartupProblemOrder ->
-      { title = "Vamos resolver este problema!"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu computador para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Mais algum detalhe sobre o seu problema?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     LostFilesOrder ->
-      { title = "Podemos ajudá-lo!"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu dispositivo para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Algum detalhe que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     SlowProblemOrder ->
-      { title = "Essa lentidão toda pode ir embora!"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     NewProgramOrder ->
-      { title = "Esperamos que você fique satisfeito"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     BackupOrder ->
-      { title = "Agora você vai ter segurança sobre os seus arquivos"
-      , subtitle = "Vamos marcar um local e horário para discutirmos sobre isso."
-      , place = "Escolha o local de entrega"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     VirusOrder ->
-      { title = "Podemos garantir a sua segurança"
-      , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
-      , place = "Escolha o local de entrega"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
     HelpOrder ->
-      { title = "Como podemos ajudá-lo?"
-      , subtitle = "Vamos agendar uma reunião."
-      , place = "Escolha o local da reunião"
-      , obs = "Alguma coisa que precisamos saber?"
+      { title = "Eiusmod tempor incididunt!"
+      , subtitle = "Eiusmod tempor incididunt."
+      , place = "Eiusmod tempor incididunt"
+      , obs = "Eiusmod tempor incididunt?"
       , page = "#/assistencia"
       }
 
@@ -354,7 +354,7 @@ scheduler model texts =
             , css "height" "auto"
             , css "display" "block"
             ]
-            [ text "Universidade Feevale (Campus II)" ]
+            [ text "Endereço A" ]
         , Toggles.radio Mdl [1] model.mdl
             [ Toggles.ripple
             , Toggles.value (model.pages.schedule.place == 1)
@@ -363,7 +363,7 @@ scheduler model texts =
             , css "height" "auto"
             , css "display" "block"
             ]
-            [ text "Café Passion" ]
+            [ text "Endereço B" ]
         , Toggles.radio Mdl [2] model.mdl
             [ Toggles.ripple
             , Toggles.value (model.pages.schedule.place == 2)
@@ -372,20 +372,20 @@ scheduler model texts =
             , css "height" "auto"
             , css "display" "block"
             ]
-            [ text "Em meu escritório ou empresa (somente se for localizado em Novo Hamburgo)" ]
+            [ text "Endereço C" ]
         , ( case model.pages.schedule.place of
               0 ->
                 Options.styled p
                   [ Typography.body2
                   , css "padding-top" "8px"
                   ]
-                  [ text "Prédio Verde (na lancheria Dog Mania) - Rua Arlindo Pasqualini, Vila Nova, Novo Hamburgo" ]
+                  [ text "Endereço A" ]
               1 ->
                 Options.styled p
                   [ Typography.body2
                   , css "padding-top" "8px"
                   ]
-                  [ text "Av. Pedro Adams Filho, 5118 - Centro, Novo Hamburgo" ]
+                  [ text "Endereço B" ]
               2 ->
                 Textfield.render Mdl [3] model.mdl
                   [ Textfield.label "Informe o endereço"
