@@ -18808,7 +18808,7 @@ var _egvelho$cibertexto_website_elm$Requests$orderDecoder = A3(
 															_elm_lang$core$Json_Decode$string,
 															_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_egvelho$cibertexto_website_elm$Types$OrderItem))))))))))))))));
 var _egvelho$cibertexto_website_elm$Requests$getOrder = function (id_) {
-	var url = A2(_elm_lang$core$Basics_ops['++'], 'https://api.cibertexto.com.br/wt-023de707d632fc09401212c10d95c6b5-0/schedule/', id_);
+	var url = A2(_elm_lang$core$Basics_ops['++'], 'https://api.example.com/schedule/', id_);
 	return A2(
 		_elm_lang$http$Http$send,
 		_egvelho$cibertexto_website_elm$Types$RequestOrderOrderPage,
@@ -18827,7 +18827,7 @@ var _egvelho$cibertexto_website_elm$Requests$resultDecoder = A3(
 	A2(_elm_lang$core$Json_Decode$field, 'status', _elm_lang$core$Json_Decode$string),
 	A2(_elm_lang$core$Json_Decode$field, 'order', _elm_lang$core$Json_Decode$string));
 var _egvelho$cibertexto_website_elm$Requests$postOrder = function (order_) {
-	var url_ = 'https://api.cibertexto.com.br/wt-023de707d632fc09401212c10d95c6b5-0/schedule';
+	var url_ = 'https://api.example.com/schedule';
 	return A2(
 		_elm_lang$http$Http$send,
 		_egvelho$cibertexto_website_elm$Types$PostSchedulingSchedulePage,
@@ -18853,7 +18853,7 @@ var _egvelho$cibertexto_website_elm$Requests$scheduleDecoder = _elm_lang$core$Js
 		A2(_elm_lang$core$Json_Decode$field, 'month', _elm_lang$core$Json_Decode$int),
 		A2(_elm_lang$core$Json_Decode$field, 'year', _elm_lang$core$Json_Decode$int)));
 var _egvelho$cibertexto_website_elm$Requests$getScheduling = function () {
-	var url = 'https://api.cibertexto.com.br/wt-023de707d632fc09401212c10d95c6b5-0/schedule';
+	var url = 'https://api.example.com/schedule';
 	return A2(
 		_elm_lang$http$Http$send,
 		_egvelho$cibertexto_website_elm$Types$RequestSchedulingSchedulePage,
@@ -19234,9 +19234,9 @@ var _egvelho$cibertexto_website_elm$Update$update = F2(
 							var _p4 = _p5;
 							switch (_p4) {
 								case 0:
-									return 'Prédio Verde (na lancheria Dog Mania) - Rua Arlindo Pasqualini, Vila Nova, Novo Hamburgo';
+									return 'Endereço A';
 								case 1:
-									return 'Av. Pedro Adams Filho, 5118 - Centro, Novo Hamburgo';
+									return 'Endereço B';
 								default:
 									return '';
 							}
@@ -19531,9 +19531,9 @@ var _egvelho$cibertexto_website_elm$Update$update = F2(
 					var _p7 = schedulePage.place;
 					switch (_p7) {
 						case 0:
-							return 'Prédio Verde (na lancheria Dog Mania) - Rua Arlindo Pasqualini, Vila Nova, Novo Hamburgo';
+							return 'Endereço A';
 						case 1:
-							return 'Av. Pedro Adams Filho, 5118 - Centro, Novo Hamburgo';
+							return 'Endereço B';
 						default:
 							return schedulePage.address;
 					}
@@ -19542,11 +19542,11 @@ var _egvelho$cibertexto_website_elm$Update$update = F2(
 					var _p8 = schedulePage.place;
 					switch (_p8) {
 						case 0:
-							return 'Universidade Feevale (Campus II)';
+							return 'Endereço A';
 						case 1:
-							return 'Café Passion';
+							return 'Endereço B';
 						default:
-							return 'Em meu escritório ou empresa';
+							return 'Endereço C';
 					}
 				}();
 				var obs = schedulePage.obs;
@@ -19925,22 +19925,22 @@ var _egvelho$cibertexto_website_elm$View_Drawer$render = function (model) {
 					_0: _debois$elm_mdl$Material_Layout$spacer,
 					_1: {
 						ctor: '::',
-						_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/home', 'Home', 'home.png', model),
+						_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/home', 'Lorem ipsum', 'home.png', model),
 						_1: {
 							ctor: '::',
-							_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/assistencia', 'Solicitar assistência', 'help.png', model),
+							_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/assistencia', 'Lorem ipsum', 'help.png', model),
 							_1: {
 								ctor: '::',
-								_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/andamento', 'Consultar andamento de pedido', 'clock.png', model),
+								_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/andamento', 'Lorem ipsum', 'clock.png', model),
 								_1: {
 									ctor: '::',
-									_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/advogados', 'Para advogados', 'lawyer.png', model),
+									_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/advogados', 'Lorem ipsum', 'lawyer.png', model),
 									_1: {
 										ctor: '::',
-										_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/dev', 'Criação de sites e aplicativos', 'code.png', model),
+										_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/dev', 'Lorem ipsum', 'code.png', model),
 										_1: {
 											ctor: '::',
-											_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/sobre', 'Sobre a empresa', 'document.png', model),
+											_0: A4(_egvelho$cibertexto_website_elm$View_Drawer$drawerItem, '#/sobre', 'Lorem ipsum', 'document.png', model),
 											_1: {ctor: '[]'}
 										}
 									}
@@ -20208,13 +20208,13 @@ var _egvelho$cibertexto_website_elm$Page_Home$infoCard = F5(
 			});
 	});
 var _egvelho$cibertexto_website_elm$Page_Home$infoSupport = function (model) {
-	return A5(_egvelho$cibertexto_website_elm$Page_Home$infoCard, model, 'Assistência técnica em computadores e celulares', 'Seus problemas podem ser resolvidos rapidamente.\n       Agende aqui mesmo e saiba na hora quanto vai custar.\n       Basta seguir os passos para o agendamento.', '#/assistencia', 'Acesse');
+	return A5(_egvelho$cibertexto_website_elm$Page_Home$infoCard, model, 'Eiusmod tempor incididunt ut labore et dolore magna aliqua', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '#/assistencia', 'Acesse');
 };
 var _egvelho$cibertexto_website_elm$Page_Home$infoPrivacy = function (model) {
-	return A5(_egvelho$cibertexto_website_elm$Page_Home$infoCard, model, 'Sigilo e privacidade em primeiro lugar', 'O maior diferencial da Cibertexto Tecnologia é o foco no sigilo e na segurança das informações dos clientes.\n       A prioridade máxima do serviço de assistência é manter os dados pessoais dos clientes longe de qualquer intrusão.', '#/sobre', 'Saiba mais');
+	return A5(_egvelho$cibertexto_website_elm$Page_Home$infoCard, model, 'Eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '#/sobre', 'Saiba mais');
 };
 var _egvelho$cibertexto_website_elm$Page_Home$infoConsultation = function (model) {
-	return A5(_egvelho$cibertexto_website_elm$Page_Home$infoCard, model, 'Vamos manter você atualizado!', 'Se você já solicitou assistência, consulte o andamento do seu pedido.\n       A Cibertexto Tecnologia busca manter seus clientes sempre atualizados sobre a prestação do serviço.', '#/andamento', 'Consulte');
+	return A5(_egvelho$cibertexto_website_elm$Page_Home$infoCard, model, 'Eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '#/andamento', 'Consulte');
 };
 var _egvelho$cibertexto_website_elm$Page_Home$bannerCard = F6(
 	function (model, title, text_, link_, img_, bgColor_) {
@@ -20449,10 +20449,10 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerAssistance = function (model
 	return A6(
 		_egvelho$cibertexto_website_elm$Page_Home$bannerCard,
 		model,
-		'Solicite assistência técnica pelo autoatendimento',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
 		{
 			ctor: '::',
-			_0: 'É simples, rápido e você sabe exatamente quanto irá custar.',
+			_0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			_1: {ctor: '[]'}
 		},
 		'#/assistencia',
@@ -20463,13 +20463,13 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerSupport = function (model) {
 	return A6(
 		_egvelho$cibertexto_website_elm$Page_Home$bannerCard,
 		model,
-		'Já fez uma solicitação?',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
 		{
 			ctor: '::',
-			_0: 'Veja como está o andamento do seu pedido.',
+			_0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			_1: {
 				ctor: '::',
-				_0: 'Mas, fique tranquilo que você será notificado das coisas importantes.',
+				_0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 				_1: {ctor: '[]'}
 			}
 		},
@@ -20484,16 +20484,16 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerLawyers = function (model) {
 		'Aos advogados',
 		{
 			ctor: '::',
-			_0: 'Problemas com seu token ao acessar serviços governamentais?',
+			_0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?',
 			_1: {
 				ctor: '::',
-				_0: 'Necessita de consultoria sobre sigilo e segurança na era da informação?',
+				_0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?',
 				_1: {
 					ctor: '::',
-					_0: 'Gostaria de proteger as informações privadas dos seus clientes?',
+					_0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?',
 					_1: {
 						ctor: '::',
-						_0: 'Pois então, conheça os serviços exclusivos para advogados.',
+						_0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
 						_1: {ctor: '[]'}
 					}
 				}
@@ -20507,10 +20507,10 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerSites = function (model) {
 	return A6(
 		_egvelho$cibertexto_website_elm$Page_Home$bannerCard,
 		model,
-		'Lojas virtuais, catálogos, sites informacionais e outros tipos de website',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
 		{
 			ctor: '::',
-			_0: 'Faça a cotação ou agende uma reunião.',
+			_0: 'Eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			_1: {ctor: '[]'}
 		},
 		'#/dev',
@@ -20521,10 +20521,10 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerApps = function (model) {
 	return A6(
 		_egvelho$cibertexto_website_elm$Page_Home$bannerCard,
 		model,
-		'Pois é! Os smartphones dominaram o mundo!',
+		'Eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		{
 			ctor: '::',
-			_0: 'A Cibertexto Tecnologia pode criar o aplicativo que você precisa.',
+			_0: 'Eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			_1: {ctor: '[]'}
 		},
 		'#/dev',
@@ -20594,7 +20594,7 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerWithTabs = function (model) 
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('Assistência'),
+							_0: _elm_lang$html$Html$text('Lorem'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
@@ -20608,7 +20608,7 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerWithTabs = function (model) 
 							},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Solicitação'),
+								_0: _elm_lang$html$Html$text('Lorem'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -20622,7 +20622,7 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerWithTabs = function (model) 
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Advogados'),
+									_0: _elm_lang$html$Html$text('Lorem'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
@@ -20636,7 +20636,7 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerWithTabs = function (model) 
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Sites'),
+										_0: _elm_lang$html$Html$text('Lorem'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {
@@ -20650,7 +20650,7 @@ var _egvelho$cibertexto_website_elm$Page_Home$bannerWithTabs = function (model) 
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('Aplicativos'),
+											_0: _elm_lang$html$Html$text('Lorem'),
 											_1: {ctor: '[]'}
 										}),
 									_1: {ctor: '[]'}
@@ -20930,8 +20930,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$mainOption = function (mode
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Seja bem-vindo ao serviço de solicitação de assistência técnica!',
-		_elm_lang$core$Native_Utils.eq(model.viewport, _egvelho$cibertexto_website_elm$Types$Desktop) ? 'Por favor, selecione a opção que mais se aproxima ao seu problema.' : 'Por favor, selecione a opção que mais se aproxima ao seu problema clicando em **continuar**.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		_elm_lang$core$Native_Utils.eq(model.viewport, _egvelho$cibertexto_website_elm$Types$Desktop) ? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$HelpOrder,
 		A2(
 			_debois$elm_mdl$Material_Options$div,
@@ -20941,13 +20941,13 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$mainOption = function (mode
 				_0: A2(
 					_evancz$elm_markdown$Markdown$toHtml,
 					{ctor: '[]'},
-					'Caso seu problema seja relativo à danos físicos no seu computador ou celular,\n            como tela quebrada ou outras avarias, saiba que não trabalhamos com estes casos.'),
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'),
 				_1: {
 					ctor: '::',
 					_0: A2(
 						_evancz$elm_markdown$Markdown$toHtml,
 						{ctor: '[]'},
-						'Ei! Psiu! Será que você não precisa de um [website](/dev) ou\n            [aplicativo para celular](/dev)?'),
+						'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor [website](/dev) ou\n            [aplicativo para celular](/dev)?'),
 					_1: {ctor: '[]'}
 				}
 			}));
@@ -20956,8 +20956,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$formatOption = function (mo
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'É inevitável!',
-		'Como precisamos formatar nossos computadores de tempos em tempos, não é mesmo?',
+		'Lorem ipsum',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$FormatOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -21010,7 +21010,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$formatOption = function (mo
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Não preciso dos meus arquivos, pode apagar tudo.'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -21060,7 +21060,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$formatOption = function (mo
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Preciso que você salve todos os meus arquivos, não posso perder nenhum.'),
+										_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -21104,7 +21104,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$formatOption = function (mo
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('Com urgência!'),
+											_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 											_1: {ctor: '[]'}
 										}),
 									_1: {ctor: '[]'}
@@ -21138,7 +21138,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$formatOption = function (mo
 													A2(
 														_elm_lang$core$Basics_ops['++'],
 														'R$ ',
-														(withBackup && urgency) ? '130,00' : (withBackup ? '100,00' : (urgency ? '110,00' : '80,00')))),
+														(withBackup && urgency) ? 'XXX,XX' : (withBackup ? 'XXX,XX' : (urgency ? 'XXX,XX' : 'XXX,XX')))),
 												_1: {ctor: '[]'}
 											}),
 										_1: {ctor: '[]'}
@@ -21171,7 +21171,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$formatOption = function (mo
 													_0: _elm_lang$html$Html$text(
 														A2(
 															_elm_lang$core$Basics_ops['++'],
-															'Entrega em ',
+															'Lorem ipsum dolor ',
 															urgency ? '2 dias' : '7 dias')),
 													_1: {ctor: '[]'}
 												}),
@@ -21189,8 +21189,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$programProblemOption = func
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'E isso sempre acontece quando a gente mais precisa',
-		'Mas, fique tranquilo que podemos ajudá-lo.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$ProgramProblemOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -21236,7 +21236,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$programProblemOption = func
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Com urgência!'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -21270,7 +21270,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$programProblemOption = func
 											A2(
 												_elm_lang$core$Basics_ops['++'],
 												'R$ ',
-												urgency ? '50,00' : '30,00')),
+												urgency ? 'XXX,XX' : 'XXX,XX')),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -21319,8 +21319,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$trollProgramOption = functi
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Também conhecidos como adware ou programas troll, se instalam silenciosamente...',
-		'...e não importa o que você faça, eles continuam lá. Podemos resolver isso!',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$TrollProgramOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -21366,7 +21366,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$trollProgramOption = functi
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Com urgência!'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -21400,7 +21400,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$trollProgramOption = functi
 											A2(
 												_elm_lang$core$Basics_ops['++'],
 												'R$ ',
-												urgency ? '40,00' : '20,00')),
+												urgency ? 'XXX,XX' : 'XXX,XX')),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -21449,8 +21449,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$startupProblemOption = func
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Isso pode ser problemático...',
-		'Quem sabe seja necessário substituir alguma peça do seu computador.\n    Por favor, tente ligá-lo e verifique se:',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$StartupProblemOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -21503,7 +21503,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$startupProblemOption = func
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Aparece uma tela como se o Windows fosse carregar, daí ele trava (ou reinicia)'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -21553,7 +21553,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$startupProblemOption = func
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('O computador fica travado em uma tela preta com umas letras brancas'),
+										_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -21603,7 +21603,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$startupProblemOption = func
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('Liga por alguns segundos mas logo se desliga/reinicia'),
+											_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 											_1: {ctor: '[]'}
 										}),
 									_1: {ctor: '[]'}
@@ -21647,7 +21647,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$startupProblemOption = func
 											},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text('Com urgência!'),
+												_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 												_1: {ctor: '[]'}
 											}),
 										_1: {ctor: '[]'}
@@ -21751,7 +21751,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$startupProblemOption = func
 														_0: _elm_lang$html$Html$text(
 															A2(
 																_elm_lang$core$Basics_ops['++'],
-																'Entrega em ',
+																'Lorem ipsum dolor ',
 																urgency ? '3 dias' : '7 dias')),
 														_1: {ctor: '[]'}
 													}),
@@ -21778,7 +21778,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$startupProblemOption = func
 														},
 														{
 															ctor: '::',
-															_0: _elm_lang$html$Html$text('OBS: Pode ser que seja necessário substituir alguma peça.\n                      Nesse caso, o valor da peça será anexado ao valor da prestação do serviço.'),
+															_0: _elm_lang$html$Html$text('OBS: Lorem ipsum dolor.'),
 															_1: {ctor: '[]'}
 														}),
 													_1: {ctor: '[]'}
@@ -21797,8 +21797,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$lostFilesOption = function 
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Por favor, desligue imediatamente o dispositivo onde o arquivo deletado estava',
-		'Quanto mais você usa este dispositivo (computador, celular, pendrive e etc.),\n    maior é a chance do seu arquivo se tornar irrecuperável.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$LostFilesOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -21826,7 +21826,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$lostFilesOption = function 
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('OBS: Nós não garantimos que seus arquivos serão recuperados.\n                       Quanto menos tempo faz que seus arquivos foram apagados,\n                       maior é a chance de recuperação. É recomendado que você desligue\n                       seu computador ou celular imediatamente por este motivo. Se os\n                       arquivos deletados estavam em uma câmera ou pendrive, não os use.'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -21870,7 +21870,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$lostFilesOption = function 
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Com urgência!'),
+										_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -21904,7 +21904,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$lostFilesOption = function 
 												A2(
 													_elm_lang$core$Basics_ops['++'],
 													'R$ ',
-													urgency ? '70,00' : '50,00')),
+													urgency ? 'XXX,XX' : 'XXX,XX')),
 											_1: {ctor: '[]'}
 										}),
 									_1: {ctor: '[]'}
@@ -21954,8 +21954,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$slowOption = function (mode
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'É frustrante',
-		'Mas, podemos dar um jeito nisso!',
+		'Lorem ipsum dolor sit amet',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$SlowProblemOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -22001,7 +22001,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$slowOption = function (mode
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Com urgência!'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -22035,7 +22035,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$slowOption = function (mode
 											A2(
 												_elm_lang$core$Basics_ops['++'],
 												'R$ ',
-												urgency ? '50,00' : '30,00')),
+												urgency ? 'XXX,XX' : 'XXX,XX')),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -22068,7 +22068,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$slowOption = function (mode
 											_0: _elm_lang$html$Html$text(
 												A2(
 													_elm_lang$core$Basics_ops['++'],
-													'Entrega em ',
+													'Lorem ipsum dolor ',
 													urgency ? '2 dias' : '4 dias')),
 											_1: {ctor: '[]'}
 										}),
@@ -22084,8 +22084,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$newProgramOption = function
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Podemos instalar quantos você quiser',
-		'E não vamos cobrar a mais por isso.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		'Lorem ipsum dolor sit amet',
 		_egvelho$cibertexto_website_elm$Types$NewProgramOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -22131,7 +22131,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$newProgramOption = function
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Com urgência!'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -22165,7 +22165,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$newProgramOption = function
 											A2(
 												_elm_lang$core$Basics_ops['++'],
 												'R$ ',
-												urgency ? '40,00' : '30,00')),
+												urgency ? 'XXX,XX' : 'XXX,XX')),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -22198,7 +22198,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$newProgramOption = function
 											_0: _elm_lang$html$Html$text(
 												A2(
 													_elm_lang$core$Basics_ops['++'],
-													'Entrega em ',
+													'Lorem ipsum dolor ',
 													urgency ? '1 dia' : '2 dias')),
 											_1: {ctor: '[]'}
 										}),
@@ -22228,7 +22228,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$newProgramOption = function
 												_0: A2(
 													_evancz$elm_markdown$Markdown$toHtml,
 													{ctor: '[]'},
-													'OBS: **Não instalamos programas pirata nos computadores/celulares\n                     dos nossos clientes**. Portanto, se o que você precisa instalar\n                     é um programa pago, por favor, compre uma licença de uso do\n                     programa para que possamos efetuar a instalação.'),
+													'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 												_1: {ctor: '[]'}
 											}),
 										_1: {
@@ -22243,7 +22243,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$newProgramOption = function
 												},
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html$text('Por outro lado, podemos instalar uma versão de testes do\n                     programa que você precisa. Estas versões geralmente funcionam\n                     por 30 dias. Outra opção é instalar uma alternativa gratuita\n                     ao programa que você precisa. Por favor, entre em contato\n                     conosco para que possamos avaliar a situação!'),
+													_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor!'),
 													_1: {ctor: '[]'}
 												}),
 											_1: {ctor: '[]'}
@@ -22260,8 +22260,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$backupOption = function (mo
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Excelente iniciativa!',
-		'O backup é uma garantia de que você não irá perder seus arquivos importantes.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$BackupOrder,
 		function () {
 			var backupOption = model.pages.techSupport.toggleBackupOption;
@@ -22313,7 +22313,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$backupOption = function (mo
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Vou fornecer o dispositivo onde os arquivos\n                      serão armazenados (hd externo, pendrive e etc.)'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -22363,7 +22363,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$backupOption = function (mo
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Não tenho onde armazenar os arquivos,\n                     preciso que você me forneça este dispositivo'),
+										_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -22397,7 +22397,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$backupOption = function (mo
 												A2(
 													_elm_lang$core$Basics_ops['++'],
 													'R$ ',
-													_elm_lang$core$Native_Utils.eq(backupOption, 0) ? '90,00' : '110,00')),
+													_elm_lang$core$Native_Utils.eq(backupOption, 0) ? 'XXX,XX' : 'XXX,XX')),
 											_1: {ctor: '[]'}
 										}),
 									_1: {
@@ -22450,7 +22450,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$backupOption = function (mo
 											},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text('Entrega em 8 dias'),
+												_0: _elm_lang$html$Html$text('Lorem ipsum dolor 8 dias'),
 												_1: {ctor: '[]'}
 											}),
 										_1: {ctor: '[]'}
@@ -22466,8 +22466,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$virusOption = function (mod
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Pode ficar tranquilo',
-		'É bem improvável que seja alguma coisa preocupante.\n    Porém, entre em contato conosco para realizarmos uma\n    verificação e, em caso de malware, remoção da ameaça.\n    Além disso, vamos orientá-lo sobre como\n    se proteger na era da informação!',
+		'Lorem ipsum',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$VirusOrder,
 		function () {
 			var urgency = model.pages.techSupport.urgency;
@@ -22513,7 +22513,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$virusOption = function (mod
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Com urgência!'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum!'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -22547,7 +22547,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$virusOption = function (mod
 											A2(
 												_elm_lang$core$Basics_ops['++'],
 												'R$ ',
-												urgency ? '60,00' : '40,00')),
+												urgency ? 'XXX,XX' : 'XXX,XX')),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -22596,8 +22596,8 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$helpOption = function (mode
 	return A5(
 		_egvelho$cibertexto_website_elm$Page_TechSupport$optionView,
 		model,
-		'Podemos agendar uma reunião',
-		'E suas dúvidas serão respondidas.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
 		_egvelho$cibertexto_website_elm$Types$HelpOrder,
 		A3(
 			_debois$elm_mdl$Material_Options$styled,
@@ -22719,34 +22719,34 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$techItems = function (model
 		},
 		{
 			ctor: '::',
-			_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Preciso formatar meu computador!', 'format.png', 'format'),
+			_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'format.png', 'format'),
 			_1: {
 				ctor: '::',
-				_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Tem um programa que não está funcionando direito.', 'stopped.png', 'programProblem'),
+				_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'stopped.png', 'programProblem'),
 				_1: {
 					ctor: '::',
-					_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Um programa se instalou sozinho e não consigo removê-lo!', 'adware.png', 'trollProgram'),
+					_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'adware.png', 'trollProgram'),
 					_1: {
 						ctor: '::',
-						_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Meu computador liga mas não inicia o Windows.', 'confusion.png', 'startupProblem'),
+						_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'confusion.png', 'startupProblem'),
 						_1: {
 							ctor: '::',
-							_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Apaguei um arquivo importante sem querer. Quero recuperá-lo.', 'lost-files.png', 'lostFiles'),
+							_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'lost-files.png', 'lostFiles'),
 							_1: {
 								ctor: '::',
-								_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Meu computador/celular está lento...', 'slow.png', 'slowProblem'),
+								_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'slow.png', 'slowProblem'),
 								_1: {
 									ctor: '::',
-									_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Preciso instalar um programa novo.', 'new-program.png', 'newProgram'),
+									_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'new-program.png', 'newProgram'),
 									_1: {
 										ctor: '::',
-										_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Gostaria de fazer backup de alguns arquivos...', 'backup.png', 'backup'),
+										_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'backup.png', 'backup'),
 										_1: {
 											ctor: '::',
-											_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Acho que peguei vírus... Estou preocupado com a segurança do meu computador/celular.', 'virus.png', 'virus'),
+											_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'virus.png', 'virus'),
 											_1: {
 												ctor: '::',
-												_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Tenho algumas dúvidas, preciso de ajuda!', 'help.png', 'help'),
+												_0: A4(_egvelho$cibertexto_website_elm$Page_TechSupport$techItem, model, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'help.png', 'help'),
 												_1: {ctor: '[]'}
 											}
 										}
@@ -22803,7 +22803,7 @@ var _egvelho$cibertexto_website_elm$Page_TechSupport$subHeader = function (model
 				},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('O que aconteceu?'),
+					_0: _elm_lang$html$Html$text('Lorem ipsum dolor?'),
 					_1: {ctor: '[]'}
 				}),
 			_1: {ctor: '[]'}
@@ -23023,7 +23023,7 @@ var _egvelho$cibertexto_website_elm$Page_Order$inputOrderCard = function (model)
 							},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Por favor, insira a senha do seu pedido'),
+								_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {ctor: '[]'}
@@ -23110,31 +23110,31 @@ var _egvelho$cibertexto_website_elm$Page_Order$getFullOption = function (option_
 	var _p0 = option_;
 	switch (_p0) {
 		case 'format':
-			return 'Formatar computador';
+			return 'Eiusmod tempor incididunt';
 		case 'programProblem':
-			return 'Problema com programa';
+			return 'Eiusmod tempor incididunt';
 		case 'trollProblem':
-			return 'Programa que não desinstala';
+			return 'Eiusmod tempor incididunt';
 		case 'startupProblem':
-			return 'Windows não inicia';
+			return 'Eiusmod tempor incididunt';
 		case 'lostFiles':
-			return 'Recuperação de arquivos';
+			return 'Eiusmod tempor incididunt';
 		case 'slowProblem':
-			return 'Computador/celular está lento';
+			return 'Eiusmod tempor incididunt';
 		case 'newProgram':
-			return 'Instalar programa(s) novo(s)';
+			return 'Eiusmod tempor incididunt';
 		case 'backup':
-			return 'Realizar backup';
+			return 'Eiusmod tempor incididunt';
 		case 'virus':
-			return 'Computador/celular com vírus';
+			return 'Eiusmod tempor incididunt';
 		case 'help':
-			return 'Ajuda';
+			return 'Eiusmod tempor incididunt';
 		case 'lawyer':
-			return 'Reunião com jurista';
+			return 'Eiusmod tempor incididunt';
 		case 'development':
-			return 'Reunião sobre desenvolvimento';
+			return 'Eiusmod tempor incididunt';
 		default:
-			return 'Não informado';
+			return 'Eiusmod tempor incididunt';
 	}
 };
 var _egvelho$cibertexto_website_elm$Page_Order$resultCard = function (model) {
@@ -23739,7 +23739,7 @@ var _egvelho$cibertexto_website_elm$Page_Order$resultCard = function (model) {
 							_0: A2(
 								_evancz$elm_markdown$Markdown$toHtml,
 								{ctor: '[]'},
-								'**OBS:** Vamos entrar em contato por celular para confirmar seu pedido.'),
+								'**OBS:** Eiusmod tempor incididunt.'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
@@ -23917,7 +23917,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$privacyInfoCard = function (mod
 							},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Auxílio técnico'),
+								_0: _elm_lang$html$Html$text('Lorem ipsum dolor'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -23927,7 +23927,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$privacyInfoCard = function (mod
 								{ctor: '[]'},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Visitamos você em seu escritório\n                para auxiliá-lo com as devidas questões\n                técnicas.'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -24075,7 +24075,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$promoCard = function (model) {
 							},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Consultoria sobre sigilo e segurança'),
+								_0: _elm_lang$html$Html$text('Eiusmod tempor incididunt ut labore et'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -24085,7 +24085,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$promoCard = function (model) {
 								{ctor: '[]'},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Que tal um pouco de criptografia?\n                Entre em contato para aprender a proteger\n                as informações pessoais dos seus clientes.'),
+									_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -24127,7 +24127,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$promoCard = function (model) {
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Agendar uma reunião'),
+									_0: _elm_lang$html$Html$text('Eiusmod tempor incididunt ut'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -24192,7 +24192,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$accessHelpCard = function (mode
 						_0: A2(
 							_evancz$elm_markdown$Markdown$toHtml,
 							{ctor: '[]'},
-							'Como já está sendo dito há algum tempo,\n            estamos na **\"era do processo eletrônico\"**.\n            Desta forma, a partir de seus computadores\n            pessoais, advogados e outros profissionais\n            da área jurídica acessam serviços\n            governamentais através da internet.'),
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 						_1: {ctor: '[]'}
 					}),
 				_1: {
@@ -24213,7 +24213,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$accessHelpCard = function (mode
 							_0: A2(
 								_evancz$elm_markdown$Markdown$toHtml,
 								{ctor: '[]'},
-								'Para realizar este acesso geralmente é\n            necessário que se instalem programas adicionais\n            que servem para, em teoria, aumentar a segurança\n            da conexão entre o computador do advogado e o\n            serviço que se deseja acessar. Além destes programas,\n            também é necessário o **token**, que é um dispositivo de\n            armazenamento que guarda o Certificado Digital\n            utilizado para autenticar o acesso.'),
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
@@ -24234,7 +24234,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$accessHelpCard = function (mode
 								_0: A2(
 									_evancz$elm_markdown$Markdown$toHtml,
 									{ctor: '[]'},
-									'Porém, existe uma série de burocracias que são\n            necessárias entre estes passos. Por exemplo, para\n            submeter uma petição ao PJE, é preciso que os \n            arquivos anexados estejam no formato PDF-A. Para\n            criar um arquivo desses à partir de um documento\n            escaneado, é necessário instalar um programa adicional.\n            **Isso não é intuitivo!**'),
+									'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -24255,7 +24255,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$accessHelpCard = function (mode
 									_0: A2(
 										_evancz$elm_markdown$Markdown$toHtml,
 										{ctor: '[]'},
-										'Ou ainda, alguns serviços precisam de um navegador\n            de internet especial para acessá-los. Como é o caso do\n            TJRS Browser. Estes navegadores geralmente são versões\n            modificadas do Mozilla Firefox pré-configuradas para\n            realizar o acesso à estes serviços. Novamente, **isso\n            tudo é muito complicado e suscetível à falhas!**'),
+										'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
@@ -24276,7 +24276,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$accessHelpCard = function (mode
 										_0: A2(
 											_evancz$elm_markdown$Markdown$toHtml,
 											{ctor: '[]'},
-											'O que nós queremos dizer com este texto, é que sabemos\n            que os juristas estão passando por um momento de transição.\n            **A Cibertexto Tecnologia pode orientá-lo durante estas mudanças.**'),
+											'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {ctor: '[]'}
@@ -24359,7 +24359,7 @@ var _egvelho$cibertexto_website_elm$Page_Lawyers$subHeader = function (model) {
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('Auxílio técnico para advogados'),
+							_0: _elm_lang$html$Html$text('Eiusmod tempor incididunt ut labore'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {ctor: '[]'}
@@ -24699,7 +24699,7 @@ var _egvelho$cibertexto_website_elm$Page_Development$materialDesignCard = functi
 		_egvelho$cibertexto_website_elm$Page_Development$infoCard,
 		model,
 		'Material Design',
-		'É o **estado da arte** em termos de design de interfaces.\n    Tudo o que desenvolvemos utiliza esta linguagem de design da\n    **Google**. Linguagem esta que busca garantir a melhor\n    **usabilidade** para seu site ou aplicativo. Além de,\n    é claro, possuir um **visual moderno e profissional**.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		'material-design.svg',
 		A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Teal, _debois$elm_mdl$Material_Color$S500));
 };
@@ -24708,7 +24708,7 @@ var _egvelho$cibertexto_website_elm$Page_Development$lambdaCard = function (mode
 		_egvelho$cibertexto_website_elm$Page_Development$infoCard,
 		model,
 		'O poder do lambda',
-		'Não é à toa que o símbolo matemático lambda integra\n    o logo da Cibertexto Tecnologia! Nós utilizamos **as tecnologias mais\n    avançadas para desenvolver seu site ou aplicativo**. Isto\n    inclui a utilização do paradigma funcional, uma forma\n    de criar programas de computador que segue princípios\n    da matemática para garantir **alta performance e\n    confiabilidade** em nossos produtos.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		'lambda.svg',
 		A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Indigo, _debois$elm_mdl$Material_Color$S500));
 };
@@ -24717,7 +24717,7 @@ var _egvelho$cibertexto_website_elm$Page_Development$mobileFirstCard = function 
 		_egvelho$cibertexto_website_elm$Page_Development$infoCard,
 		model,
 		'Mobile First',
-		'Viu como este site se adaptou perfeitamente na tela\n    do seu celular? Isto é porque **pensamos primeiro nos\n    celulares** para desenvolvê-lo. É justamente disso que\n    o Mobile First se trata: **focar no que todo mundo usa**,\n    onde as pessoas estão. Criar pensando nas telas dos\n    celulares e então adaptá-las para as telas dos\n    computadores.',
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		'mobile-first.svg',
 		A2(_debois$elm_mdl$Material_Color$color, _debois$elm_mdl$Material_Color$Pink, _debois$elm_mdl$Material_Color$S500));
 };
@@ -24762,7 +24762,7 @@ var _egvelho$cibertexto_website_elm$Page_Development$headerContact = function (m
 							{ctor: '[]'},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Vamos avaliar seu negócio e\n                apresentar para você uma solução\n                em software extremamente elegante.'),
+								_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {ctor: '[]'}
@@ -25306,7 +25306,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 											},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text('Quem somos?'),
+												_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet?'),
 												_1: {ctor: '[]'}
 											}),
 										_1: {ctor: '[]'}
@@ -25329,7 +25329,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 											_0: A2(
 												_evancz$elm_markdown$Markdown$toHtml,
 												{ctor: '[]'},
-												'A Cibertexto Tecnologia é uma empresa da área da\n                    informática que presta serviços de software\n                    em **Novo Hamburgo**, RS. Realizamos desde\n                    tarefas básicas, como **formatar computadores** ou\n                    instalar programas, até tarefas avançadas, como o\n                    desenvolvimento de **lojas virtuais e\n                    aplicativos para celular**.'),
+												'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 											_1: {ctor: '[]'}
 										}),
 									_1: {
@@ -25348,7 +25348,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 													},
 													{
 														ctor: '::',
-														_0: _elm_lang$html$Html$text('Nosso diferencial'),
+														_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet'),
 														_1: {ctor: '[]'}
 													}),
 												_1: {ctor: '[]'}
@@ -25371,7 +25371,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 													_0: A2(
 														_evancz$elm_markdown$Markdown$toHtml,
 														{ctor: '[]'},
-														'Apos analisar o cenário da informática\n                    na região do Vale dos Sinos, foi observado\n                    que as atividades mais básicas deste segmento,\n                    como assistência técnica em computadores e\n                    celulares, ainda estavam sendo tratadas como\n                    se estivéssemos na década passada.'),
+														'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 													_1: {ctor: '[]'}
 												}),
 											_1: {
@@ -25392,7 +25392,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 														_0: A2(
 															_evancz$elm_markdown$Markdown$toHtml,
 															{ctor: '[]'},
-															'A Cibertexto Tecnologia busca modernizar esta área\n                    que há muito foi abandonada. Trazendo novas\n                    soluções e levando a interação com o cliente\n                    para o ciberespaço.'),
+															'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 														_1: {ctor: '[]'}
 													}),
 												_1: {
@@ -25411,7 +25411,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 																},
 																{
 																	ctor: '::',
-																	_0: _elm_lang$html$Html$text('Da ciência para o mercado'),
+																	_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet'),
 																	_1: {ctor: '[]'}
 																}),
 															_1: {ctor: '[]'}
@@ -25434,7 +25434,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 																_0: A2(
 																	_evancz$elm_markdown$Markdown$toHtml,
 																	{ctor: '[]'},
-																	'Muitos dizem que a ciência é algo irrelevante,\n                    tratam a pesquisa como um investimento opcional.\n                    **Isto não é verdade!** Se hoje temos dispositivos\n                    com um poder computacional imensurável em nossos\n                    bolsos, é porque cientístas trabalharam muito e\n                    durante muitos anos para desenvolvê-los. **O bom\n                    profissional incorpora a ciência em seu meio de\n                    trabalho e não a ignora como se teoria e prática\n                    fossem atividades distintas**. A Cibertexto\n                    Tecnologia é uma empresa empoderada pela pesquisa!'),
+																	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 																_1: {ctor: '[]'}
 															}),
 														_1: {
@@ -25453,7 +25453,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 																		},
 																		{
 																			ctor: '::',
-																			_0: _elm_lang$html$Html$text('Sigilo e privacidade em primeiro lugar'),
+																			_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet'),
 																			_1: {ctor: '[]'}
 																		}),
 																	_1: {ctor: '[]'}
@@ -25476,7 +25476,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 																		_0: A2(
 																			_evancz$elm_markdown$Markdown$toHtml,
 																			{ctor: '[]'},
-																			'Outra questão que culminou no nascimento da\n                    Cibertexto Tecnologia é a forma desrespeitosa como muitas empresas\n                    de informática tratam os dados pessoais dos clientes.\n                    **A ética, a integridade e o respeito à privacidade** do\n                    sujeito são aspectos de base que integram a nossa\n                    ideologia.'),
+																			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
 																		_1: {ctor: '[]'}
 																	}),
 																_1: {
@@ -25514,11 +25514,11 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 																							ctor: '::',
 																							_0: A2(
 																								_debois$elm_mdl$Material_List$avatarImage,
-																								'velho.jpg',
+																								'adware.png',
 																								{ctor: '[]'}),
 																							_1: {
 																								ctor: '::',
-																								_0: _elm_lang$html$Html$text('Enviado por Eduardo Velho'),
+																								_0: _elm_lang$html$Html$text('Enviado por Anônimo'),
 																								_1: {
 																									ctor: '::',
 																									_0: A2(
@@ -25533,7 +25533,7 @@ var _egvelho$cibertexto_website_elm$Page_About$render = function (model) {
 																										},
 																										{
 																											ctor: '::',
-																											_0: _elm_lang$html$Html$text('Mestrando em Diversidade\n                                Cultural e Inclusão Social e Tecnólogo\n                                em Sistemas para Internet.'),
+																											_0: _elm_lang$html$Html$text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'),
 																											_1: {ctor: '[]'}
 																										}),
 																									_1: {ctor: '[]'}
@@ -26166,7 +26166,7 @@ var _egvelho$cibertexto_website_elm$Page_Schedule$scheduler = F2(
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('Universidade Feevale (Campus II)'),
+											_0: _elm_lang$html$Html$text('Endereço A'),
 											_1: {ctor: '[]'}
 										}),
 									_1: {
@@ -26209,7 +26209,7 @@ var _egvelho$cibertexto_website_elm$Page_Schedule$scheduler = F2(
 											},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text('Café Passion'),
+												_0: _elm_lang$html$Html$text('Endereço B'),
 												_1: {ctor: '[]'}
 											}),
 										_1: {
@@ -26252,7 +26252,7 @@ var _egvelho$cibertexto_website_elm$Page_Schedule$scheduler = F2(
 												},
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html$text('Em meu escritório ou empresa (somente se for localizado em Novo Hamburgo)'),
+													_0: _elm_lang$html$Html$text('Endereço C'),
 													_1: {ctor: '[]'}
 												}),
 											_1: {
@@ -26275,7 +26275,7 @@ var _egvelho$cibertexto_website_elm$Page_Schedule$scheduler = F2(
 																},
 																{
 																	ctor: '::',
-																	_0: _elm_lang$html$Html$text('Prédio Verde (na lancheria Dog Mania) - Rua Arlindo Pasqualini, Vila Nova, Novo Hamburgo'),
+																	_0: _elm_lang$html$Html$text('Endereço A'),
 																	_1: {ctor: '[]'}
 																});
 														case 1:
@@ -26293,7 +26293,7 @@ var _egvelho$cibertexto_website_elm$Page_Schedule$scheduler = F2(
 																},
 																{
 																	ctor: '::',
-																	_0: _elm_lang$html$Html$text('Av. Pedro Adams Filho, 5118 - Centro, Novo Hamburgo'),
+																	_0: _elm_lang$html$Html$text('Endereço B'),
 																	_1: {ctor: '[]'}
 																});
 														case 2:
@@ -26584,29 +26584,29 @@ var _egvelho$cibertexto_website_elm$Page_Schedule$getTexts = function (model) {
 	var _p3 = model.pages.schedule.order;
 	switch (_p3.ctor) {
 		case 'DevelopmentOrder':
-			return {title: 'Vamos falar sobre o seu incrível projeto!', subtitle: 'Por favor, siga os passos abaixo para agendarmos uma reunião.', place: 'Escolha o local da reunião', obs: 'Alguma coisa que precisamos saber?', page: '#/dev'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/dev'};
 		case 'LawyerOrder':
-			return {title: 'Vamos agendar uma visita', subtitle: 'Por favor, siga os passos para o agendamento.', place: 'Escolha onde será o encontro', obs: 'Alguma coisa que precisamos saber?', page: '#/advogados'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/advogados'};
 		case 'FormatOrder':
-			return {title: 'Você vai sentir como se o seu computador estivesse novo', subtitle: 'Vamos marcar um local e horário para você entregar seu computador para nós.', place: 'Escolha o local de entrega', obs: 'Precisa de algum programa especial instalado ou algo parecido?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'ProgramProblemOrder':
-			return {title: 'Considere o problema como resolvido', subtitle: 'Vamos marcar um local e horário para você entregar seu computador ou celular para nós.', place: 'Escolha o local de entrega', obs: 'Alguma coisa que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'TrollProgramOrder':
-			return {title: 'Esse programa vai cair fora!', subtitle: 'Vamos marcar um local e horário para você entregar seu computador ou celular para nós.', place: 'Escolha o local de entrega', obs: 'Alguma coisa que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'StartupProblemOrder':
-			return {title: 'Vamos resolver este problema!', subtitle: 'Vamos marcar um local e horário para você entregar seu computador para nós.', place: 'Escolha o local de entrega', obs: 'Mais algum detalhe sobre o seu problema?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'LostFilesOrder':
-			return {title: 'Podemos ajudá-lo!', subtitle: 'Vamos marcar um local e horário para você entregar seu dispositivo para nós.', place: 'Escolha o local de entrega', obs: 'Algum detalhe que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'SlowProblemOrder':
-			return {title: 'Essa lentidão toda pode ir embora!', subtitle: 'Vamos marcar um local e horário para você entregar seu computador ou celular para nós.', place: 'Escolha o local de entrega', obs: 'Alguma coisa que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'NewProgramOrder':
-			return {title: 'Esperamos que você fique satisfeito', subtitle: 'Vamos marcar um local e horário para você entregar seu computador ou celular para nós.', place: 'Escolha o local de entrega', obs: 'Alguma coisa que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'BackupOrder':
-			return {title: 'Agora você vai ter segurança sobre os seus arquivos', subtitle: 'Vamos marcar um local e horário para discutirmos sobre isso.', place: 'Escolha o local de entrega', obs: 'Alguma coisa que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		case 'VirusOrder':
-			return {title: 'Podemos garantir a sua segurança', subtitle: 'Vamos marcar um local e horário para você entregar seu computador ou celular para nós.', place: 'Escolha o local de entrega', obs: 'Alguma coisa que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 		default:
-			return {title: 'Como podemos ajudá-lo?', subtitle: 'Vamos agendar uma reunião.', place: 'Escolha o local da reunião', obs: 'Alguma coisa que precisamos saber?', page: '#/assistencia'};
+			return {title: 'Eiusmod tempor incididunt!', subtitle: 'Eiusmod tempor incididunt.', place: 'Eiusmod tempor incididunt', obs: 'Eiusmod tempor incididunt?', page: '#/assistencia'};
 	}
 };
 var _egvelho$cibertexto_website_elm$Page_Schedule$render = function (model) {
