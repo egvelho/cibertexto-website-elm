@@ -1,0 +1,26 @@
+body * {
+  outline: none;
+}
+
+body {
+  background-color: #F9F9F9;
+}
+
+.mdl-list__item-primary-content {
+  min-height: 40px;
+}
+
+.mdl-list__item-primary-content img {
+  min-height: 40px;
+}
+
+.mdl-select > .mdl-menu__container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 200px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.mdl-select > .mdl-textfield {
+  width: 100%;
+}
