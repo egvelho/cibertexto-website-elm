@@ -1,4 +1,3 @@
-elm-stuff
 node_modules
-build
-.dirlist.new
+elm-stuff/build-artifacts
+elm-stuff/exact-dependencies.json

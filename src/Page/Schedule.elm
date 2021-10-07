@@ -39,7 +39,7 @@ getTexts model =
       , subtitle = "Por favor, siga os passos abaixo para agendarmos uma reunião."
       , place = "Escolha o local da reunião"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/dev"
+      , page = "#/dev"
       }
 
     LawyerOrder ->
@@ -47,7 +47,7 @@ getTexts model =
       , subtitle = "Por favor, siga os passos para o agendamento."
       , place = "Escolha onde será o encontro"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/advogados"
+      , page = "#/advogados"
       }
 
     FormatOrder ->
@@ -55,7 +55,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu computador para nós."
       , place = "Escolha o local de entrega"
       , obs = "Precisa de algum programa especial instalado ou algo parecido?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     ProgramProblemOrder ->
@@ -63,7 +63,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
       , place = "Escolha o local de entrega"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     TrollProgramOrder ->
@@ -71,7 +71,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
       , place = "Escolha o local de entrega"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     StartupProblemOrder ->
@@ -79,7 +79,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu computador para nós."
       , place = "Escolha o local de entrega"
       , obs = "Mais algum detalhe sobre o seu problema?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     LostFilesOrder ->
@@ -87,7 +87,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu dispositivo para nós."
       , place = "Escolha o local de entrega"
       , obs = "Algum detalhe que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     SlowProblemOrder ->
@@ -95,7 +95,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
       , place = "Escolha o local de entrega"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     NewProgramOrder ->
@@ -103,7 +103,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
       , place = "Escolha o local de entrega"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     BackupOrder ->
@@ -111,7 +111,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para discutirmos sobre isso."
       , place = "Escolha o local de entrega"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     VirusOrder ->
@@ -119,7 +119,7 @@ getTexts model =
       , subtitle = "Vamos marcar um local e horário para você entregar seu computador ou celular para nós."
       , place = "Escolha o local de entrega"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
     HelpOrder ->
@@ -127,7 +127,7 @@ getTexts model =
       , subtitle = "Vamos agendar uma reunião."
       , place = "Escolha o local da reunião"
       , obs = "Alguma coisa que precisamos saber?"
-      , page = "/assistencia"
+      , page = "#/assistencia"
       }
 
 backgroundImage : Html Msg

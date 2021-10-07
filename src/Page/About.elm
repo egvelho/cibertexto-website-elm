@@ -133,7 +133,7 @@ render model =
                     ]
                     [ List.content []
                         [ List.avatarImage "velho.jpg" []
-                        , text "Enviado por Eduardo Gabriel Velho"
+                        , text "Enviado por Eduardo Velho"
                         , List.body
                             [ css "display" "none" |> when (model.viewport == Types.Phone) ]
                             [ text

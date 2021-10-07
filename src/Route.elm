@@ -10,26 +10,26 @@ lookFor location =
   let
     _ = Debug.log "teste_" location
   in
-    case location.pathname of
-      "/home" ->
+    case location.hash of
+      "#/home" ->
         Types.GoTo Types.Home
 
-      "/assistencia" ->
+      "#/assistencia" ->
         Types.GoTo Types.TechSupport
 
-      "/andamento" ->
+      "#/andamento" ->
         Types.GoTo Types.Order
 
-      "/dev" ->
+      "#/dev" ->
         Types.GoTo Types.Development
 
-      "/advogados" ->
+      "#/advogados" ->
         Types.GoTo Types.Lawyers
 
-      "/sobre" ->
+      "#/sobre" ->
         Types.GoTo Types.About
 
-      "/agendamento" ->
+      "#/agendamento" ->
         Types.GoTo Types.Schedule
 
       _ ->

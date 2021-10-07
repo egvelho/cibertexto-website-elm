@@ -92,7 +92,7 @@ bannerAssistance model =
   bannerCard model
     "Solicite assistência técnica pelo autoatendimento"
     [ "É simples, rápido e você sabe exatamente quanto irá custar." ]
-    "/assistencia"
+    "#/assistencia"
     "calendar.svg"
     (Color.color Color.Cyan Color.S400)
 
@@ -103,7 +103,7 @@ bannerSupport model =
     [ "Veja como está o andamento do seu pedido."
     , "Mas, fique tranquilo que você será notificado das coisas importantes."
     ]
-    "/andamento"
+    "#/andamento"
     "request.svg"
     (Color.color Color.Purple Color.S300)
 
@@ -116,7 +116,7 @@ bannerLawyers model =
     , "Gostaria de proteger as informações privadas dos seus clientes?"
     , "Pois então, conheça os serviços exclusivos para advogados."
     ]
-    "/advogados"
+    "#/advogados"
     "scales.svg"
     Color.black
 
@@ -125,7 +125,7 @@ bannerSites model =
   bannerCard model
     "Lojas virtuais, catálogos, sites informacionais e outros tipos de website"
     [ "Faça a cotação ou agende uma reunião." ]
-    "/dev"
+    "#/dev"
     "website.svg"
     (Color.color Color.Lime Color.S700)
 
@@ -134,7 +134,7 @@ bannerApps model =
   bannerCard model
     "Pois é! Os smartphones dominaram o mundo!"
     [ "A Cibertexto Tecnologia pode criar o aplicativo que você precisa." ]
-    "/dev"
+    "#/dev"
     "mobile.svg"
     (Color.color Color.Orange Color.S300)
 
@@ -217,7 +217,7 @@ infoSupport model =
     """Seus problemas podem ser resolvidos rapidamente.
        Agende aqui mesmo e saiba na hora quanto vai custar.
        Basta seguir os passos para o agendamento."""
-    "/assistencia"
+    "#/assistencia"
     "Acesse"
 
 infoPrivacy : Model -> Html Msg
@@ -226,7 +226,7 @@ infoPrivacy model =
     "Sigilo e privacidade em primeiro lugar"
     """O maior diferencial da Cibertexto Tecnologia é o foco no sigilo e na segurança das informações dos clientes.
        A prioridade máxima do serviço de assistência é manter os dados pessoais dos clientes longe de qualquer intrusão."""
-    "/sobre"
+    "#/sobre"
     "Saiba mais"
 
 infoConsultation : Model -> Html Msg
@@ -235,7 +235,7 @@ infoConsultation model =
     "Vamos manter você atualizado!"
     """Se você já solicitou assistência, consulte o andamento do seu pedido.
        A Cibertexto Tecnologia busca manter seus clientes sempre atualizados sobre a prestação do serviço."""
-    "/andamento"
+    "#/andamento"
     "Consulte"
 
 

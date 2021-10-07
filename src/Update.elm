@@ -245,7 +245,7 @@ update msg model =
                   { schedulePage | order = order_ }
               }
           }
-        , Navigation.newUrl "/agendamento"
+        , Navigation.newUrl "#/agendamento"
         )
 
     Types.TogglePlaceSchedulePage place_ ->
@@ -467,7 +467,7 @@ update msg model =
             , ( if result_.status == "ok" then
                   Cmd.batch
                     [ Requests.getOrder result_.order
-                    , Navigation.newUrl "/andamento"
+                    , Navigation.newUrl "#/andamento"
                     ]
                 else
                   Cmd.none

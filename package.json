@@ -1,0 +1,27 @@
+{
+  "name": "cibertexto-website-elm",
+  "version": "1.0.0",
+  "description": "Website written in Elm 0.18.",
+  "main": "index.js",
+  "scripts": {
+    "build": "elm-make src/Main.elm --output=public/main.js",
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egvelho/cibertexto-website-elm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egvelho/cibertexto-website-elm/issues"
+  },
+  "homepage": "https://github.com/egvelho/cibertexto-website-elm#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

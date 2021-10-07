@@ -58,26 +58,26 @@ model =
 init : Location -> (Model, Cmd Msg)
 init location =
   let page =
-    case location.pathname of
-      "/home" ->
+    case location.hash of
+      "#/home" ->
         Types.Home
 
-      "/assistencia" ->
+      "#/assistencia" ->
         Types.TechSupport
 
-      "/andamento" ->
+      "#/andamento" ->
         Types.Order
 
-      "/advogados" ->
+      "#/advogados" ->
         Types.Lawyers
 
-      "/dev" ->
+      "#/dev" ->
         Types.Development
 
-      "/sobre" ->
+      "#/sobre" ->
         Types.About
 
-      "/agendamento" ->
+      "#/agendamento" ->
         Types.Home
 
       _ ->

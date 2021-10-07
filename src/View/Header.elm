@@ -45,6 +45,6 @@ render model =
           [ Menu.bottomRight
           , Options.id "whatsapp-menu"
           ]
-          [ Menu.item [] [ text "(51) 99631-3018" ] ]
+          [ Menu.item [] [ text "(XX) XXXXX-XXXX" ] ]
       ]
   ]
